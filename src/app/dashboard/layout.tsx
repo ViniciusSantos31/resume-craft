@@ -22,7 +22,9 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
           <ThemeToggle />
         </div>
       </aside>
-      <main className="">{children}</main>
+      <main className="flex h-full w-full flex-col overflow-auto p-6">
+        {children}
+      </main>
     </div>
   );
 }

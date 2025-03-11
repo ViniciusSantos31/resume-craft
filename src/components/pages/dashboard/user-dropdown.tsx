@@ -15,7 +15,7 @@ export const UserDropdown = () => {
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="flex w-full justify-start gap-2 px-2"
+          className="flex w-full flex-1 justify-start gap-2 px-2"
         >
           <Avatar className="block size-7">
             <AvatarImage src="https://i.pravatar.cc/40" alt="User" />
