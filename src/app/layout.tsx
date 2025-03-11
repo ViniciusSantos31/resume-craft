@@ -28,11 +28,13 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <body
-        className={cn(fontSans.variable, fontTitle.variable, "antialiased")}
+        className={cn(
+          "bg-background flex min-h-screen font-sans antialiased",
+          fontSans.variable,
+          fontTitle.variable,
+        )}
       >
-        <ThemeProvider>
-          {children}
-        </ThemeProvider>
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
