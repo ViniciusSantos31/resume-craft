@@ -5,7 +5,7 @@ import { SectionTitle } from "../section-title";
 
 export const BasicInfoSection = () => {
   return (
-    <section>
+    <section className="relative">
       <SectionTitle title="Informações básicas" icon={UserRound} />
       <div className="mt-4 grid w-full grid-cols-2 gap-4">
         <div className="col-span-full flex w-full items-end gap-3">

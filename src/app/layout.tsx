@@ -5,6 +5,7 @@ import { Nunito, Nunito_Sans } from "next/font/google";
 import { cn } from "@/lib/utils";
 
 import { ThemeProvider } from "@/components/shared/theme-provider";
+import { Toaster } from "@/components/ui/sonner";
 import "../styles/globals.css";
 
 const fontSans = Nunito_Sans({
@@ -34,6 +35,7 @@ export default function RootLayout({
           fontTitle.variable,
         )}
       >
+        <Toaster />
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

@@ -1,6 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: false,
+  images: {
+    dangerouslyAllowSVG: true,
+    formats: ["image/avif", "image/webp"],
+    domains: ["cdn.simpleicons.org"],
+    remotePatterns: [
+      {
+        hostname: "cdn.simpleicons.org",
+        protocol: "https",
+      }
+    ]
+  },
   webpack(config) {
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.(".svg")

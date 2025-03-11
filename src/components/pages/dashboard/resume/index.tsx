@@ -25,6 +25,14 @@ export const ResumePage = () => {
         phone: "",
         location: "",
       },
+      summary: "",
+      certifications: [],
+      educations: [],
+      experiences: [],
+      languages: [],
+      projects: [],
+      skills: [],
+      socialMedias: [],
     },
   };
 
@@ -36,7 +44,7 @@ export const ResumePage = () => {
     <FormProvider {...methods}>
       <main className="h-screen w-full overflow-hidden">
         <ResizablePanelGroup direction="horizontal" className="h-full w-full">
-          <ResizablePanel minSize={20} maxSize={40} defaultSize={30}>
+          <ResizablePanel minSize={20} maxSize={40}>
             <InfosSidebar />
           </ResizablePanel>
           <ResizableHandle withHandle />
@@ -44,7 +52,7 @@ export const ResumePage = () => {
             <ResumeContent />
           </ResizablePanel>
           <ResizableHandle withHandle />
-          <ResizablePanel minSize={20} maxSize={35} defaultSize={25}>
+          <ResizablePanel minSize={20} maxSize={35}>
             <StructureSidebar />
           </ResizablePanel>
         </ResizablePanelGroup>

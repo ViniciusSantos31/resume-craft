@@ -10,7 +10,7 @@ import {
 export type BaseDialogProps = {
   open?: boolean;
   setOpen?: (open: boolean) => void;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 type DialogProps = BaseDialogProps & {
